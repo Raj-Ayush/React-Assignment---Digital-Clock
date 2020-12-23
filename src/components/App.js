@@ -44,7 +44,7 @@ class App extends Component {
         const getSecString = this.padNumberTwoDigit(seconds);
 
         // HH:MM:SS{space}PM
-        const calcTime = `${getHrString}:${getMinString}:${getSecString}`;
+        const calcTime = `${getHrString}:${getMinString}:${getSecString} ${amorPm}`;
         return calcTime;
     }
     padNumberTwoDigit(num) {
